@@ -26,7 +26,7 @@ const Header = ({currentUser}) => (
 )
 
 const mapStateToProps = state => ({
-    currentUser: state.user.userReducer
+    currentUser: state.user.currentUser
 })
 
-export default connect()(Header);
+export default connect(mapStateToProps)(Header);
