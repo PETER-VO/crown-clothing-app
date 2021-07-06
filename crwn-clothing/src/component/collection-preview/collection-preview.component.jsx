@@ -9,7 +9,7 @@ const CollectionPreview = ({title, items}) => (
             {
                 items
                 .filter((id, idx) => idx < 4)
-                .map(({id, ...otherProperties}) => <CollectionItem key={id} {...otherProperties}/>)
+                .map(item => <CollectionItem key={item.id} item={item}/>)
             }
         </div>
     </div>
